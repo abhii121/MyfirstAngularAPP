@@ -1,0 +1,57 @@
+<h2 style="text-align: center;">Sign up</h2>
+<div class="container" style=" border: 3px solid rgb(224, 224, 224); border-radius: 25px; background-color: rgb(200, 217, 230); width: 400px;">
+    <div class="" >
+        <div class="card-body">
+            <h4 class="card-title">Enter the details </h4><hr>
+            <div class="row">
+                <div class="col">
+                    <form [formGroup]="myForm" novalidate>
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" formControlName="name"
+                                [ngClass]="{'is-invalid': name.errors && (name.touched || name.dirty), 'is-valid':name.valid}">
+                            <div class="invalid-feedback">
+                                <strong *ngIf="name.errors?.required">Name is required</strong>
+                                <strong *ngIf="name.errors?.minlength">Name length must be greater than
+                                    {{name.errors?.minlength.requiredLength}} character.
+                                    {{name.errors?.minlength.requiredLength - name.errors?.minlength.actualLength}} more
+                                    character required. </strong>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label>Last Name</label>
+                            <input type="text" class="form-control" formControlName="modelName"
+                                [ngClass]="{'is-invalid': modelName.errors && (modelName.touched || modelName.dirty), 'is-valid':modelName.valid}">
+                            <div class="invalid-feedback">
+                                <strong *ngIf="modelName.errors?.required">Name is required</strong>
+                                <strong *ngIf="modelName.errors?.minlength">Name length must be greater than
+                                    {{modelName.errors?.minlength.requiredLength}} character.
+                                    {{modelName.errors?.minlength.requiredLength -
+                                    modelName.errors?.minlength.actualLength}} more character required. </strong>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="text" class="form-control" formControlName="Email"
+                                [ngClass]="{'is-invalid': Email.errors && (Email.touched || Email.dirty), 'is-valid':Email.valid}">
+                            <div class="alert alert-danger" role="alert">
+                                <strong>Email is required.</strong>
+                           
+                                </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" class="form-control" formControlName="Pass"
+                                [ngClass]="{'is-invalid': Pass.errors && (Pass.touched || Pass.dirty), 'is-valid':Pass.valid}">
+                            <div class="alert alert-danger" role="alert">
+                                <strong>Password is required.</strong>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>&nbsp; &nbsp;
+                        <button class="btn btn-default">Reset</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
