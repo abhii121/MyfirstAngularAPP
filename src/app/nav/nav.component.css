@@ -1,11 +1,5 @@
 .btn a{
-    
-    color: aliceblue;
-   
-}
-:hover .btn{
-    background-color: rgba(0, 255, 255, 0.61);
-    color: rgb(255, 255, 255);
+      color: aliceblue;
 }
 
 

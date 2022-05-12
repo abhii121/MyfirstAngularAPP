@@ -1,5 +1,9 @@
-<h2 style="text-align: center;">Sign up</h2>
-<div class="container" style=" border: 3px solid rgb(224, 224, 224); border-radius: 25px; background-color: rgb(200, 217, 230); width: 400px;">
+<div class="row">
+    <div class="col-lg">
+
+        
+<h2 style="text-align: center;">Login</h2>
+<div class="container" style="color: aliceblue; border: 3px solid rgb(224, 224, 224); border-radius: 25px; background-color: rgb(61, 61, 61); width: 400px;">
     <div class="" >
         <div class="card-body">
             <h4 class="card-title">Enter the details </h4><hr>
@@ -19,7 +23,7 @@
                             </div>
                         </div>
                         <div class="form-group ">
-                            <label>Last Name</label>
+                            <label>User Name</label>
                             <input type="text" class="form-control" formControlName="modelName"
                                 [ngClass]="{'is-invalid': modelName.errors && (modelName.touched || modelName.dirty), 'is-valid':modelName.valid}">
                             <div class="invalid-feedback">
@@ -34,24 +38,30 @@
                             <label>Email</label>
                             <input type="text" class="form-control" formControlName="Email"
                                 [ngClass]="{'is-invalid': Email.errors && (Email.touched || Email.dirty), 'is-valid':Email.valid}">
-                            <div class="alert alert-danger" role="alert">
+                            <!-- <div class="alert alert-danger" role="alert">
                                 <strong>Email is required.</strong>
                            
-                                </div>
+                                </div> -->
                         </div>
                         <div class="form-group">
                             <label>Password</label>
                             <input type="password" class="form-control" formControlName="Pass"
                                 [ngClass]="{'is-invalid': Pass.errors && (Pass.touched || Pass.dirty), 'is-valid':Pass.valid}">
-                            <div class="alert alert-danger" role="alert">
+                            <!-- <div class="alert alert-danger" role="alert">
                                 <strong>Password is required.</strong>
-                            </div>
+                            </div> -->
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>&nbsp; &nbsp;
-                        <button class="btn btn-default">Reset</button>
+                        <button type="submit" class="btn btn-primary" routerLink="">Login</button>&nbsp; &nbsp;
+                        <!-- <button class="btn btn-default">Reset</button> -->
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+    </div>
+    <div class="col-lg">
+        <img src="..//../assets/pexels-olya-kobruseva-5556289.jpg" height="100%" width="500px" alt="">
+    </div>
+  </div>

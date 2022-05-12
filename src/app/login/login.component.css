@@ -6,4 +6,10 @@ h2{
 .card-title{
     text-align: center;
 }
+.col-lg img{
+    padding-top: 30px;
+    
+    border-radius: 30px;
+
+}
 

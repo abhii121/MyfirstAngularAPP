@@ -12,6 +12,10 @@
 
 }
 
-#d2 .row img{
+/* #d2 .row img{
     padding: 20px;
+} */
+.container-fluid a{
+    background-color: rgb(61, 61, 61);
+    border-color: black;
 }

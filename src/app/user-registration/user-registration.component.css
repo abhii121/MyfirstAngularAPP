@@ -1,0 +1,7 @@
+.container{
+    padding: 40px;
+    margin-top: 20px;
+}
+.container .row{
+    margin-left: 40px;
+}
