@@ -5,3 +5,12 @@
 .container .row{
     margin-left: 40px;
 }
+/* #id1{
+ background-image: url("..//..//assets/login1.jpg");
+} */
+#divb button{
+    color: rgb(255, 255, 255);
+    background-color: rgb(92, 92, 92);
+    border-color: rgb(131, 131, 131);
+}
+

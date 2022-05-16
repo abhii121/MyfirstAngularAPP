@@ -1,3 +1,5 @@
+import { UserServiceService } from "./userservice.service";
+
 export interface User {
     id:number;
     Name:string;

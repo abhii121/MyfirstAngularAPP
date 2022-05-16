@@ -32,11 +32,26 @@
         </div>
    </div>
    <hr>
-   <app-shop></app-shop>
+   <div class="container"  >
+    <div class="row" style="margin-top: 10px">
+        <div class="col-md-3 col-xs-6" *ngFor="let feedback of feedbacks">
+            <div class="card" id="card1" style="border-style:solid;border-color:rgb(117, 117, 117);border-width: 5px; margin-top: 10px;" >
+                <div class="card-body" >
+                    <img src="..//../assets/Contacts-icon.png" style="height: 100px;width: 100px;">
+                    <h5 class="card-title">{{ feedback.name | uppercase }}</h5>
+                    <p class="card-text">{{ feedback.feedback | uppercase }}</p>
+                    <a class="btn btn-primary" style="text-align:center" href="#" >Read More....</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   
+   <!-- <app-shop></app-shop>
    <hr>
    <app-men></app-men>
    <app-women></app-women>
-   <app-contact></app-contact>
+   <app-contact></app-contact> -->
 </div>
     
     

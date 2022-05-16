@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Feedback } from '../feedback';
+import { FeedbackService } from '../feedback.service';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  feedbacks: Feedback[]=[]
 
-  constructor() { }
+  constructor(private feedbackservice: FeedbackService) { }
 
   ngOnInit(): void {
+    const feedbacksObservable = this.feedbackservice.getFeedbacks();
+    feedbacksObservable.subscribe((feedbacksData: Feedback[]) => {
+      this.feedbacks = feedbacksData;
+  });
   }
 
 }

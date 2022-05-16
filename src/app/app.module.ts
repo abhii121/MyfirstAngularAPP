@@ -12,7 +12,26 @@ import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserRegistrationComponent } from './user-registration/user-registration.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule , HttpClient } from '@angular/common/http';
+import { UserServiceService } from './userservice.service';
+// import { EmployeeComponent } from './employee/employee.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { EmployeeService } from './employee.service'; 
+import { MatButtonModule, } from '@angular/material/button';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
+import {MatIconModule} from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card' 
+import { MatRadioModule } from '@angular/material/radio';  
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatFormFieldModule} from '@angular/material/form-field';  
+import {MatInputModule} from '@angular/material/input';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { MatToolbarModule } from '@angular/material/toolbar';
+  
+
+
 
 
 @NgModule({
@@ -34,9 +53,22 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule,  
+    MatMenuModule,  
+    MatDatepickerModule,  
+    MatNativeDateModule,  
+    MatIconModule,  
+    MatRadioModule,  
+    MatCardModule,  
+    MatSidenavModule,  
+    MatFormFieldModule,  
+    MatInputModule,  
+    MatTooltipModule,  
+    MatToolbarModule
   ],
-  providers: [],
+  providers: [HttpClientModule,MatDatepickerModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
